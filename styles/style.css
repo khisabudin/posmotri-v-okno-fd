@@ -16,12 +16,10 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  padding-bottom:  105px;
+  padding-bottom:  10px;
   display: flex;
-  width: 1200px;
   justify-content: space-around;
   align-items: center;
-  gap: 130px;
 }
 
 h1,
@@ -49,7 +47,6 @@ ol {
 .custom-scrollbar {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 298px;
 }
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -68,12 +65,10 @@ ol {
   justify-content: center;
   align-items: flex-end;
   width: 1140px;
-  height: 534px;
   gap: 30px;
 }
 .result {
   width: 711px;
-  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,6 +77,7 @@ ol {
   width: 711px;
   height: 386px;
   object-fit: cover;
+  margin-bottom: 13px;
 }
 .result__video {
   width: 100%;
@@ -105,10 +101,8 @@ ol {
 }
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
-  background: transparent;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -117,12 +111,10 @@ ol {
   cursor: pointer;
   margin-bottom: 3px;
 }
-.search-form__submit-button:active {
-  background: #545050;
-}
+
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -136,8 +128,8 @@ input {
   color: #fff;
   background: transparent;
   outline: none;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
   font-family: Fira Sans Condensed;
@@ -161,13 +153,12 @@ input:focus-visible {
   align-items: center;
   gap: 5px;
 }
-.search-form__label-text:hover {
+.search-form__label:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 .search-form__label + input:focus-visible {
-  outline: 10px solid white;
-  border: 10px solid white;
+  outline: 1px solid white;
 }
 .search-form__textfield:focus {
   outline: none;
@@ -201,7 +192,7 @@ input:focus-visible {
 input:checked + .search-form__pseudo-checkbox::before {
   transform: scale(1);
 }
-.search-form__label:has(input:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid white;
 }
 .content__details {
@@ -209,7 +200,6 @@ input:checked + .search-form__pseudo-checkbox::before {
   height: 100%;
 }
 .content__list {
-  height: 456px;
   width: 399px;
   display: contents;
   gap: 28px;
@@ -223,14 +213,18 @@ input:checked + .search-form__pseudo-checkbox::before {
 }
 .content__list-item {
   width: 390px;
-  height: 103px;
   display: flex;
 }
-.content__list-item:active {
-  background: #545050;
+.content__list-item:hover {
+  text-decoration: underline;
 }
+.content__list-item:active {
+background: #545050;
+text-decoration: none;
+}
+
 .content__video-card-title {
-  font-family: oswald;
+  font-family: oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -246,11 +240,11 @@ input:checked + .search-form__pseudo-checkbox::before {
   font-family: Fira Sans Condensed;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 0.9;
   letter-spacing: 0;
   color: #fff;
   padding-left: 1px;
-  width: 190px;
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -266,7 +260,6 @@ input:checked + .search-form__pseudo-checkbox::before {
 }
 .content__video-card-description-container {
   width: 196px;
-  height: 103px;
 }
 
 .content__video-card-thumbnail {
@@ -283,13 +276,12 @@ input:checked + .search-form__pseudo-checkbox::before {
   margin-bottom: 22px;
 }
 .content__accent {
-  color: bisque;
+  color: #5c5250;
 }
 
 .more-button {
   display: block;
   width: 99%;
-  height: 34px;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -314,10 +306,13 @@ input:checked + .search-form__pseudo-checkbox::before {
 .content__list-container {
   position: relative;
 }
-.preloader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+.button {
+  background: transparent;
+  height: 34px;
+}
+.button:active {
+    background: #545050;
+}
+.button:hover {
+  text-decoration: underline;
 }
