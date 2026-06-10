@@ -101,14 +101,6 @@ ol {
 }
 .search-form__submit-button {
   width: 194px;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  border: #fff 1px solid;
-  cursor: pointer;
   margin-bottom: 3px;
 }
 
@@ -132,7 +124,7 @@ input {
   border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -153,7 +145,7 @@ input:focus-visible {
   align-items: center;
   gap: 5px;
 }
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -215,10 +207,11 @@ input:checked + .search-form__pseudo-checkbox::before {
   width: 390px;
   display: flex;
 }
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
+  color: #fff;
 }
-.content__list-item:active {
+.content__card-link:active {
 background: #545050;
 text-decoration: none;
 }
@@ -237,7 +230,7 @@ text-decoration: none;
   text-overflow: ellipsis;
 }
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 0.9;
@@ -267,7 +260,7 @@ text-decoration: none;
   height: 103px;
 }
 .title {
-  font-family: oswald;
+  font-family: "oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -282,17 +275,7 @@ text-decoration: none;
 .more-button {
   display: block;
   width: 99%;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: Fira Sans Condensed;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  }
+}
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -309,9 +292,18 @@ text-decoration: none;
 .button {
   background: transparent;
   height: 34px;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: #fff 1px solid;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 .button:active {
-    background: #545050;
+  background: #545050;
 }
 .button:hover {
   text-decoration: underline;
