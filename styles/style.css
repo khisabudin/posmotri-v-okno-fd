@@ -215,7 +215,9 @@ input:checked + .search-form__pseudo-checkbox::before {
 background: #545050;
 text-decoration: none;
 }
-
+.content__card-link_current {
+    background: #545050;
+}
 .content__video-card-title {
   font-family: oswald, sans-serif;
   font-weight: 700;
